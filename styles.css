@@ -1,4 +1,6 @@
 /* GLOBAL STYLES */
 body {
     background-image: url(images/background.png);
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
