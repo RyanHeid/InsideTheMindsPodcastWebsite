@@ -13,6 +13,11 @@ body {
     background: #E31C04;
 }
 
+.navbar-nav .active, .navbar-nav a:hover {
+    color: black;
+}
+
+
 .nav-link {
     color: white;
 }
