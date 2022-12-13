@@ -10,6 +10,12 @@ body {
     overflow-x: hidden;
 }
 
+.text {
+    color: whitesmoke;
+}
+
+/* GLOBAL NAVIGATION */
+
 .navbar {
     background: #E31C04;
 }
