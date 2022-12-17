@@ -50,7 +50,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     color: white; 
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 1200px) {
     .btn {
         display:flex;
         justify-content: center;
