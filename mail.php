@@ -1,16 +1,16 @@
-<?php
-  if(isset( $_POST['name']))
-  $name = $_POST['name'];
-  if(isset( $_POST['email']))
-  $email = $_POST['email'];
-  if(isset( $_POST['message']))
-  $message = $_POST['message'];
-  if(isset( $_POST['subject']))
-  $subject = $_POST['subject'];
-
-  $content="From: $name \n Email: $email \n Message: $message";
-  $recipient = "ryan.jacob.heid@gmail.com";
-  $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $content, $mailheader) or die("Error!");
-  echo "Email sent!";
+<?
+$Email=$_POST['email'];
+$subject=$_POST['subject'];
+$message=$_POST['message'];
+$body .= "Email: " . $Email . "\n";
+$body .= "subject: " . $subject . "\n";
+$body .= "Message: " . $message . "\n";
+//replace with your email
+mail("ryan.jacob.heid@gmail.com","From Inside The Mids Site",$body);
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>alert("Your email has been sent. Thank You!");</script>
+<meta HTTP-EQUIV="REFRESH" content="0; url=index.html">
+</head>
