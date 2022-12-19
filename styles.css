@@ -79,8 +79,22 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     
 }
 
-/* video embed styles */
+/* video box styles */
+.video {
+    margin: auto;
+    width: 60%;
+}
 
+/* video box rules at smaller screens */
+@media only screen and (max-width: 950px) { 
+    .embed-responsive {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+
+/* video box embed styles */
 h4 {
     color: white;
 }
@@ -99,7 +113,7 @@ h4 {
 }
 
 .container {
-   background-color:#e31c04;
+   background-color:black;
 }
 
 body > div {
