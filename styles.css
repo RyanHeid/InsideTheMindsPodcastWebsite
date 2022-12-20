@@ -280,6 +280,12 @@ body > div {
     color: black;
 }  
   
+/* shop page styles */
+.carousel-inner img {
+    height: 850px;
+    width: 30%;
+}
+
   /* Footer Social Media Icons */
   .button { 
     display: inline-block;
