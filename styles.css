@@ -148,6 +148,11 @@ h4 {
     background-color: #e31c04;
 }
 
+.map-responsive {
+    overflow: hidden;
+    position: relative;
+}
+
 body > div {
 	
 	font-family: "Oswald", sans-serif;
