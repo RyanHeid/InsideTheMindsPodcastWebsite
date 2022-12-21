@@ -1,10 +1,10 @@
 <?
-$Email=$_POST['email'];
+$Email=$_POST['Email'];
 $subject=$_POST['subject'];
 $message=$_POST['message'];
 $body .= "Email: " . $Email . "\n";
 $body .= "subject: " . $subject . "\n";
-$body .= "Message: " . $message . "\n";
+$body .= "message: " . $message . "\n";
 //replace with your email
 mail("ryan.jacob.heid@gmail.com","From Inside The Mids Site",$body);
 ?>
