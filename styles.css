@@ -318,6 +318,7 @@ body > div {
 .footer {
     position: absolute;
     width: 100%;
+    background-color: white;
   }
 
 .links {
@@ -396,3 +397,9 @@ body > div {
   .button.youtube {
     background:#FF0000;
   }
+
+/* webnado logo in footer */
+
+.webnado img {
+    width: 200px;
+}
