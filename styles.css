@@ -3,6 +3,11 @@ background: #e31c04;
 */
 
 /* GLOBAL STYLES */
+.home .navbar {
+    font-family: "Lato", sans-serif;
+    font: bolder;
+    font-size: 20px;
+}
 
 .football, .hockey, .boxing, .mma, .music, .media1, .clips, .about, .contact-page, .shop {
     background-image: url(images/background.png);
