@@ -4,7 +4,7 @@ background: #e31c04;
 
 /* GLOBAL STYLES */
 
-.football, .hockey, .boxing, .mma, .music, .media, .clips, .about, .contact-page, .shop {
+.football, .hockey, .boxing, .mma, .music, .media1, .clips, .about, .contact-page, .shop {
     background-image: url(images/background.png);
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
