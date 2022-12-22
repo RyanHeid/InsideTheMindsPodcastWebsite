@@ -1,16 +1,31 @@
-<?
-$Email=$_POST['Email'];
-$subject=$_POST['subject'];
-$message=$_POST['message'];
-$body .= "Email: " . $Email . "\n";
-$body .= "subject: " . $subject . "\n";
-$body .= "message: " . $message . "\n";
-//replace with your email
-mail("ryan.jacob.heid@gmail.com","From Inside The Mids Site",$body);
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<script>alert("Your email has been sent. Thank You!");</script>
-<meta HTTP-EQUIV="REFRESH" content="0; url=index.html">
-</head>
+<?php
+ require_once "Mail.php";
+ 
+ $from = "Sandra Sender <sender@example.com>";
+ $to = "Ramona Recipient <ryanheid@insidethemindspodcast.com>";
+ $subject = "Hi!";
+ $body = "Hi,
+
+How are you?";
+ 
+ $host = "mail.insidethemindspodcast.com";
+ $username = "smtp_username";
+ $password = "smtp_password";
+ 
+ $headers = array ('From' => $from,
+   'To' => $to,
+   'Subject' => $subject);
+ $smtp = Mail::factory('smtp',
+   array ('host' => $host,
+     'auth' => true,
+     'username' => $username,
+     'password' => $password));
+ 
+ $mail = $smtp->send($to, $headers, $body);
+ 
+ if (PEAR::isError($mail)) {
+   echo("<p>" . $mail->getMessage() . "</p>");
+  } else {
+   echo("<p>Message successfully sent!</p>");
+  }
+ ?>
