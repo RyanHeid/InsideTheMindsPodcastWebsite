@@ -25,7 +25,7 @@
 
     <a href="#" class="navbar-brand">
       <!-- Logo Image -->
-      <img src="images/FaceLogoRounded.jpg" width="45" alt="" class="d-inline-block align-middle mr-2">
+      <img src="images/FaceLogoRounded.jpg" width="45" alt="music podcast sports" class="d-inline-block align-middle mr-2">
       <!-- Logo Text -->
       <span class="text-uppercase font-weight-bold">Inside The Minds Podcast</span>
     </a>
@@ -92,19 +92,31 @@
                         <div class="col-md-6">
                           <div class="single-input">
                             <i class="fa fa-envelope"></i>
-                            <input type="email" name="email" class="form-control mail-field" required="reguired" placeholder="Your Email">
+                            <input id="email" type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
                           </div>
                         </div>
+
                         <div class="col-md-6">
                           <div class="single-input">
                             <i class="fa fa-check"></i>
-                            <input type="text" name="subject" class="form-control" required="required" placeholder="subject"> 
+                            <input id="subject" type="text" name="subject" class="form-control" required="required" placeholder="subject"> 
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="whom">
+                          
+                            
+                            <label for="whom">To Whom: </label>
+                            <select name="whom">
+                            <option value="ryanheid@insidethemindspodcast.com">Ryan</option>
+                            <option value="ryan.jacob.heid@gmail.com">Dante</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="single-input">
                             <i class="fa fa-pencil"></i>
-                            <textarea name="message" id="message" class="form-control" rows="8" required="required" placeholder="message"></textarea>  
+                            <textarea id="comment" name="comment" class="form-control" rows="15" required="required" placeholder="message"></textarea>  
                           </div>
                         </div>
                         <div class="col-12">

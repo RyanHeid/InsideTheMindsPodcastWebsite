@@ -308,6 +308,13 @@ body > div {
 	}
 }
 
+.whom {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+
 @media (min-width: 768px) and (max-width: 991.99px) {
 	.section-contact {
 	 padding: 80px 60px;
